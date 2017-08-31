@@ -6,8 +6,9 @@
 package estructurasdedatos;
 
 import cap1.complejidad.Ciclos;
-import cap1.complejidad.Condicionales1;
-import estructurasdedatos.cap1.complejidad.Condicionales;
+import cap1.complejidad.Condicionales;
+import cap1.tiposdedatos.Persona;
+
 
 /**
  *
@@ -29,11 +30,23 @@ public class EstructurasDeDatos {
         ci.Pares();*/
         
         //Prueba Condicionales
-        Condicionales1 con = new Condicionales1();
+        //Condicionales con = new Condicionales();
         //con.SumaImpares();
         //con.SumaPares();
         //con.numerosentreintervalo();
     
+        
+        //PRUEBA CLASE PERSONA
+        
+        Persona people=new Persona();
+        people.setNombre("David");
+        people.setDireccion("Barajas");
+        people.setCedula("767687");
+        people.setTelefono("657686");
+        
+        System.out.println("nombre: "+people.getNombre()+"\n"+"direccion: "+people.getDireccion()+"\n"+"cedula: "
+                +people.getCedula()+"\n"+"telefono: "+people.getTelefono());
+        
     }
     
 }
