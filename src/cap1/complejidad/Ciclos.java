@@ -11,7 +11,7 @@ package cap1.complejidad;
  */
 public class Ciclos {
     
-    
+    //Constructor
     public Ciclos(){}
     
     //numeros del 1 al 100
@@ -23,7 +23,7 @@ public class Ciclos {
         }
     }   
     
-        //numeros del 100 al 1
+        //Metodo numeros del 100 al 1
     public void Nr100al1 (){
         int i;
         for(i=100; i>=1; i--){
@@ -31,7 +31,7 @@ public class Ciclos {
         }
     }
     
-    //Suma de los numeros del 1 al 100
+    //Metodo Suma de los numeros del 1 al 100
     
     public void Suma1al100(){
         int suma;
@@ -43,13 +43,14 @@ public class Ciclos {
         System.out.println(suma);
     }
     
-    //Numeros pares del 1 al 100
-    
+    //Metodo Numeros pares del 1 al 100
+
     public void Pares(){
         int x;
         for(x=1; x<100; x++ ){
             if(x%2 == 0){
                 System.out.println(x);
+            
             }
         }
         
