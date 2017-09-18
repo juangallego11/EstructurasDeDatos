@@ -7,8 +7,37 @@ package estructurasdedatos.utiles.nodos;
 
 /**
  *
- * @author tusk
+ * @author David
  */
 public class NodoSimple {
-    
+
+    /**
+     * @return the siguiente
+     */
+    public NodoSimple getSiguiente() {
+        return siguiente;
+    }
+
+    /**
+     * @param siguiente the siguiente to set
+     */
+    public void setSiguiente(NodoSimple siguiente) {
+        this.siguiente = siguiente;
+    }
+
+    /**
+     * @return the dato
+     */
+    public int getDato() {
+        return dato;
+    }
+
+    /**
+     * @param dato the dato to set
+     */
+    public void setDato(int dato) {
+        this.dato = dato;
+    }
+    private NodoSimple siguiente;
+    private int dato;
 }

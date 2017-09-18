@@ -8,6 +8,8 @@ package estructurasdedatos;
 import cap1.complejidad.Ciclos;
 import cap1.complejidad.Condicionales;
 import cap1.tiposdedatos.Persona;
+import cap2.arreglos.Vector;
+import cap2.listas.ListaSimple;
 import estructurasdedatos.cap2.arreglos.Matriz;
 
 
@@ -52,7 +54,7 @@ public class EstructurasDeDatos {
         
         
         //PRUEBA MARTRIZ
-        Matriz mimatriz = new Matriz();
+        /*Matriz mimatriz = new Matriz();
         mimatriz.crear(3, 3);
         mimatriz.insertar(0, 0, 4);
         mimatriz.insertar(0,1, 3);
@@ -63,7 +65,32 @@ public class EstructurasDeDatos {
         mimatriz.insertar(2,0, 2);
         mimatriz.insertar(2,1, 5);
         mimatriz.insertar(2,2, 0);
-        mimatriz.listar();
+        mimatriz.listar();*/
+        
+        //Prueba Vector
+        Vector mivector = new Vector();
+        mivector.crearvec(4);
+        mivector.insertar(0, "juan");
+        mivector.insertar(1, "david");
+        mivector.insertar(2, "gallego");
+        mivector.insertar(3, "rangel");
+        mivector.listar();
+        mivector.actualizar(0, "Juan");
+        mivector.listar();
+        mivector.borrar(2);
+        mivector.listar();
+        
+        
+       //Prueba ListaSimple
+       /*ListaSimple milis = new ListaSimple();
+       milis.crearlista();
+       milis.insertaraInicio(8);
+       milis.insertaraInicio(2);
+       milis.insertarFinal(4);
+       milis.listar();
+       milis.borrar(8);
+       milis.listar();*/
+      
+               
     }
-    
 }
