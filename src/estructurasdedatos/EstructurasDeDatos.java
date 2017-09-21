@@ -9,9 +9,9 @@ import cap1.complejidad.Ciclos;
 import cap1.complejidad.Condicionales;
 import cap1.tiposdedatos.Persona;
 import cap2.arreglos.Vector;
+import cap2.listas.ListaDoble;
 import cap2.listas.ListaSimple;
 import estructurasdedatos.cap2.arreglos.Matriz;
-
 
 /**
  *
@@ -23,10 +23,8 @@ public class EstructurasDeDatos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-          
-        
         //Prueba Ciclos
-        
+
         /*Ciclos ci = new Ciclos();
         ci.Nro1al100();
         ci.Nr100al1();
@@ -34,14 +32,14 @@ public class EstructurasDeDatos {
         ci.Pares();*/
         
         //Prueba Condicionales
+        
         /*Condicionales con = new Condicionales();
         con.SumaImpares();
         con.SumaPares();
         con.numerosentreintervalo();*/
-    
         
         //PRUEBA CLASE PERSONA
-        
+
         /*Persona people=new Persona();
         people.setNombre("David");
         people.setDireccion("Barajas");
@@ -52,8 +50,9 @@ public class EstructurasDeDatos {
                 +people.getCedula()+"\n"+"telefono: "+people.getTelefono());*/
         
         
-        
         //PRUEBA MARTRIZ
+        
+        
         /*Matriz mimatriz = new Matriz();
         mimatriz.crear(3, 3);
         mimatriz.insertar(0, 0, 4);
@@ -67,8 +66,11 @@ public class EstructurasDeDatos {
         mimatriz.insertar(2,2, 0);
         mimatriz.listar();*/
         
+        
         //Prueba Vector
-        Vector mivector = new Vector();
+        
+        
+        /*Vector mivector = new Vector();
         mivector.crearvec(4);
         mivector.insertar(0, "juan");
         mivector.insertar(1, "david");
@@ -78,11 +80,13 @@ public class EstructurasDeDatos {
         mivector.actualizar(0, "Juan");
         mivector.listar();
         mivector.borrar(2);
-        mivector.listar();
+        mivector.listar();*/
         
         
-       //Prueba ListaSimple
-       /*ListaSimple milis = new ListaSimple();
+        //Prueba ListaSimple
+        
+        
+        /*ListaSimple milis = new ListaSimple();
        milis.crearlista();
        milis.insertaraInicio(8);
        milis.insertaraInicio(2);
@@ -90,7 +94,17 @@ public class EstructurasDeDatos {
        milis.listar();
        milis.borrar(8);
        milis.listar();*/
-      
-               
+        
+        
+        //Prueba Lista_doble
+        
+        
+        ListaDoble milist = new ListaDoble();
+        milist.Crearlist();
+        milist.Insertarini(2);
+        milist.Listar();
+        milist.Insertarfin(23);
+        milist.Insertarini(5);
+        milist.Listar();
     }
 }
