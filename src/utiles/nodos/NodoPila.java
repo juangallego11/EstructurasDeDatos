@@ -3,47 +3,45 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package estructurasdedatos.utiles.nodos;
+package utiles.nodos;
+
+import cap1.tiposdedatos.Persona;
 
 /**
  *
- * @author tusk
+ * @author David
  */
-public class NodoObjeto {
-
-    private int dato;
-    private NodoObjeto siguiente;
+public class NodoPila {
 
     /**
      * @return the dato
      */
-    public int getDato() {
+    public Persona getDato() {
         return dato;
     }
 
     /**
      * @param dato the dato to set
      */
-    public void setDato(int dato) {
+    public void setDato(Persona dato) {
         this.dato = dato;
     }
 
     /**
      * @return the siguiente
      */
-    public NodoObjeto getSiguiente() {
+    public NodoPila getSiguiente() {
         return siguiente;
     }
 
     /**
      * @param siguiente the siguiente to set
      */
-    public void setSiguiente(NodoObjeto siguiente) {
+    public void setSiguiente(NodoPila siguiente) {
         this.siguiente = siguiente;
     }
 
-    public void crearnodo() {
-        this.dato = 0;
-        this.siguiente = null;
-    }
+    private Persona dato;
+    public NodoPila siguiente;
+
 }

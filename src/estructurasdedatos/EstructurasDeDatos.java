@@ -9,8 +9,10 @@ import cap1.complejidad.Ciclos;
 import cap1.complejidad.Condicionales;
 import cap1.tiposdedatos.Persona;
 import cap2.arreglos.Vector;
+import cap2.listas.Cola;
 import cap2.listas.ListaDoble;
 import cap2.listas.ListaSimple;
+import cap2.listas.Pila;
 import estructurasdedatos.cap2.arreglos.Matriz;
 
 /**
@@ -99,12 +101,37 @@ public class EstructurasDeDatos {
         //Prueba Lista_doble
         
         
-        ListaDoble milist = new ListaDoble();
+        /*ListaDoble milist = new ListaDoble();
         milist.Crearlist();
         milist.Insertarini(2);
         milist.Listar();
         milist.Insertarfin(23);
         milist.Insertarini(5);
-        milist.Listar();
+        milist.Listar();*/
+        
+        
+        //Prueba Estructura Cola
+        
+       /* Cola colaa = new Cola();
+        
+        colaa.crearCola();
+        colaa.encolar(2);
+        colaa.listar();
+        colaa.desencolar();
+        colaa.listar();
+        colaa.encolar(3);
+        colaa.listar();
+        colaa.encolar(6);
+        colaa.listar();
+        colaa.desencolar();*/
+       
+       //Prueba de La pila
+       
+       Pila mipila = new Pila();
+       
+       mipila.apilar("juan", "315", "6677", "jjns");
+       mipila.listar();
+       mipila.apilar("david", "347", "627", "876");
+       mipila.listar();
     }
 }
