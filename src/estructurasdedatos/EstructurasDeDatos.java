@@ -13,6 +13,7 @@ import cap2.listas.Cola;
 import cap2.listas.ListaDoble;
 import cap2.listas.ListaSimple;
 import cap2.listas.Pila;
+import cap3.mapas.Diccionario;
 import estructurasdedatos.cap2.arreglos.Matriz;
 
 /**
@@ -125,13 +126,25 @@ public class EstructurasDeDatos {
         colaa.listar();
         colaa.desencolar();*/
        
-       //Prueba de La pila
+       //Prueba de La Estructura pila
        
-       Pila mipila = new Pila();
+       /*Pila mipila = new Pila();
        
        mipila.apilar("juan", "315", "6677", "jjns");
        mipila.listar();
        mipila.apilar("david", "347", "627", "876");
-       mipila.listar();
+       mipila.listar();*/
+       
+       //Prueba de la Estructura Mapa
+       
+       Diccionario diccio = new Diccionario();
+       diccio.agregarMapa("Escritorio", "Mueble constituido por un tablero para escribir y cajones");
+       diccio.agregarMapa("Lapiz", "implemento para escribir");
+       diccio.agregarMapa("computador", "dispositivo para todos los ingenieros de sistemas");
+       //diccio.buscarValorConClave("Escritorio");
+       //diccio.buscarValorConClave("Lapiz");
+       diccio.buscarValorConClave("computador");
+       
+       
     }
 }
