@@ -24,10 +24,12 @@ public class TablaHash {
         Arrays.fill(arreglo, "-1");
 
     }
+    //constructor 
 
     public TablaHash() {
 
     }
+    //Mi funcion hash convierte string en entero y me devuelve el indice para cada valor
 
     public void miFuncionHash(String[] cadenaArreglo, String[] arreglo) {
         int i;
@@ -45,11 +47,12 @@ public class TablaHash {
         }
     }
 
+    //Listar Con separaciones https://www.facebook.com/MasterHeHeGar
     public void listar() {
         int aumentar = 0, i, j;
-        
+
         for (i = 0; i < 1; i++) {
-            aumentar +=8;
+            aumentar += 8;
 
             for (j = 0; j < 71; j++) {
                 System.out.print("-");
@@ -79,4 +82,3 @@ public class TablaHash {
         }
     }
 }
- 
