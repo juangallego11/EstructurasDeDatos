@@ -14,6 +14,7 @@ import cap2.listas.ListaDoble;
 import cap2.listas.ListaSimple;
 import cap2.listas.Pila;
 import cap3.mapas.Diccionario;
+import cap3.mapas.TablaHash;
 import estructurasdedatos.cap2.arreglos.Matriz;
 
 /**
@@ -137,14 +138,18 @@ public class EstructurasDeDatos {
        
        //Prueba de la Estructura Mapa
        
-       Diccionario diccio = new Diccionario();
+       /*Diccionario diccio = new Diccionario();
        diccio.agregarMapa("Escritorio", "Mueble constituido por un tablero para escribir y cajones");
        diccio.agregarMapa("Lapiz", "implemento para escribir");
        diccio.agregarMapa("computador", "dispositivo para todos los ingenieros de sistemas");
        //diccio.buscarValorConClave("Escritorio");
        //diccio.buscarValorConClave("Lapiz");
-       diccio.buscarValorConClave("computador");
+       diccio.buscarValorConClave("computador");*/
        
-       
+       //Prueba Tabla hash
+       /*TablaHash mitabla = new TablaHash(8);
+       String[] elementos = {"20", "33", "21", "10"};
+       mitabla.miFuncionHash(elementos, mitabla.arreglo);
+       mitabla.listar();*/
     }
 }
