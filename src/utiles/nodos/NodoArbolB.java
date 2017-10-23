@@ -3,12 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package estructurasdedatos.utiles.nodos;
+package utiles.nodos;
+
+import cap4.arboles.ArbolB;
 
 /**
  *
- * @author tusk
+ * @author David
  */
-public class NodoArbolB {
+    public class NodoArbolB {
+    
+        public ArbolB hijoderecho;
+        public ArbolB hijoizquierdo;
+        public int dato;
+
+        public void NodoArbolB() {
+            this.hijoderecho = null;
+            this.hijoizquierdo = null;
+            this.dato = 0;
+        }
+    
     
 }
+    
+

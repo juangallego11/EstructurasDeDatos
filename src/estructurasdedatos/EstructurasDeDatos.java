@@ -15,7 +15,9 @@ import cap2.listas.ListaSimple;
 import cap2.listas.Pila;
 import cap3.mapas.Diccionario;
 import cap3.mapas.TablaHash;
+import cap4.arboles.ArbolB;
 import estructurasdedatos.cap2.arreglos.Matriz;
+import utiles.nodos.NodoArbolB;
 
 /**
  *
@@ -34,14 +36,11 @@ public class EstructurasDeDatos {
         ci.Nr100al1();
         ci.Suma1al100();
         ci.Pares();*/
-        
         //Prueba Condicionales
-        
         /*Condicionales con = new Condicionales();
         con.SumaImpares();
         con.SumaPares();
         con.numerosentreintervalo();*/
-        
         //PRUEBA CLASE PERSONA
 
         /*Persona people=new Persona();
@@ -52,11 +51,7 @@ public class EstructurasDeDatos {
         
         System.out.println("nombre: "+people.getNombre()+"\n"+"direccion: "+people.getDireccion()+"\n"+"cedula: "
                 +people.getCedula()+"\n"+"telefono: "+people.getTelefono());*/
-        
-        
         //PRUEBA MARTRIZ
-        
-        
         /*Matriz mimatriz = new Matriz();
         mimatriz.crear(3, 3);
         mimatriz.insertar(0, 0, 4);
@@ -69,11 +64,7 @@ public class EstructurasDeDatos {
         mimatriz.insertar(2,1, 5);
         mimatriz.insertar(2,2, 0);
         mimatriz.listar();*/
-        
-        
         //Prueba Vector
-        
-        
         /*Vector mivector = new Vector();
         mivector.crearvec(4);
         mivector.insertar(0, "juan");
@@ -85,11 +76,7 @@ public class EstructurasDeDatos {
         mivector.listar();
         mivector.borrar(2);
         mivector.listar();*/
-        
-        
         //Prueba ListaSimple
-        
-        
         /*ListaSimple milis = new ListaSimple();
        milis.crearlista();
        milis.insertaraInicio(8);
@@ -98,11 +85,7 @@ public class EstructurasDeDatos {
        milis.listar();
        milis.borrar(8);
        milis.listar();*/
-        
-        
         //Prueba Lista_doble
-        
-        
         /*ListaDoble milist = new ListaDoble();
         milist.Crearlist();
         milist.Insertarini(2);
@@ -110,11 +93,8 @@ public class EstructurasDeDatos {
         milist.Insertarfin(23);
         milist.Insertarini(5);
         milist.Listar();*/
-        
-        
         //Prueba Estructura Cola
-        
-       /* Cola colaa = new Cola();
+        /* Cola colaa = new Cola();
         
         colaa.crearCola();
         colaa.encolar(2);
@@ -126,30 +106,38 @@ public class EstructurasDeDatos {
         colaa.encolar(6);
         colaa.listar();
         colaa.desencolar();*/
-       
-       //Prueba de La Estructura pila
-       
-       /*Pila mipila = new Pila();
+        //Prueba de La Estructura pila
+        /*Pila mipila = new Pila();
        
        mipila.apilar("juan", "315", "6677", "jjns");
        mipila.listar();
        mipila.apilar("david", "347", "627", "876");
        mipila.listar();*/
-       
-       //Prueba de la Estructura Mapa
-       
-       /*Diccionario diccio = new Diccionario();
+        //Prueba de la Estructura Mapa
+        /*Diccionario diccio = new Diccionario();
        diccio.agregarMapa("Escritorio", "Mueble constituido por un tablero para escribir y cajones");
        diccio.agregarMapa("Lapiz", "implemento para escribir");
        diccio.agregarMapa("computador", "dispositivo para todos los ingenieros de sistemas");
        //diccio.buscarValorConClave("Escritorio");
        //diccio.buscarValorConClave("Lapiz");
        diccio.buscarValorConClave("computador");*/
-       
-       //Prueba Tabla hash
-       /*TablaHash mitabla = new TablaHash(8);
+        //Prueba Tabla hash
+        /*TablaHash mitabla = new TablaHash(8);
        String[] elementos = {"20", "33", "21", "10"};
        mitabla.miFuncionHash(elementos, mitabla.arreglo);
        mitabla.listar();*/
+        //PRUEBA 
+        ArbolB nuevo = new ArbolB();
+        nuevo.insertar(12);
+        nuevo.insertar(23);
+        nuevo.insertar(10);
+        nuevo.insertar(14);
+        nuevo.insertar(7);
+        nuevo.insertar(19);
+
+        nuevo.preorden();
+        System.out.println("<------ preorden");
+        nuevo.postorder();
+        System.out.println("<------ postorden");
     }
 }
