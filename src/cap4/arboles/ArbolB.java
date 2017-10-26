@@ -19,6 +19,7 @@ public class ArbolB {
         return raiz == null;
     }
 
+    ///funcion_Insertar
     public void insertar(int nodo1) {
         if (esVacia()) {
             NodoArbolB nuevonodo = new NodoArbolB();
@@ -35,7 +36,7 @@ public class ArbolB {
             }
         }
     }
-
+    ///PREORDEN CLASE DEL 23 DE OCT
     public void preorden() {
         if (!esVacia()) {
             System.out.print(raiz.dato + ",");
@@ -44,14 +45,16 @@ public class ArbolB {
         }
     }
 
-    public void inorder() {
+    ///ORDEN CLASE DEL 23 OCT
+    public void order() {
         if (!esVacia()) {
-            raiz.hijoizquierdo.inorder();
+            raiz.hijoizquierdo.order();
             System.out.print(raiz.dato + ",");
-            raiz.hijoderecho.inorder();
+            raiz.hijoderecho.order();
         }
     }
 
+    ///POSTORDEN CLASE DEL 23 OCT
     public void postorder() {
         if (!esVacia()) {
             raiz.hijoizquierdo.postorder();
@@ -59,5 +62,6 @@ public class ArbolB {
             System.out.print(raiz.dato + ",");
         }
     }
-
+    
+    //METODO_BUSCAR
 }
