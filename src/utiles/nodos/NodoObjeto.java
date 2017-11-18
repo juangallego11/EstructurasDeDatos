@@ -7,7 +7,7 @@ package estructurasdedatos.utiles.nodos;
 
 /**
  *
- * @author tusk
+ * @author David
  */
 public class NodoObjeto {
 

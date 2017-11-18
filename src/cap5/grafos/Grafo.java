@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package estructurasdedatos.cap5.grafos;
+package cap5.grafos;
 
 /**
  *
- * @author tusk
+ * @author dr
  */
 public class Grafo {
     

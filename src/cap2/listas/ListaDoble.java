@@ -26,7 +26,7 @@ public class ListaDoble {
     public boolean esVacia() {
         return cabeza == null;
     }
-    // INSERTAR AL INICIO
+    // INSERTAR AL FINAL
 
     public void Insertarfin(int dato) {
         NodoDoble nodo1 = new NodoDoble();
@@ -44,7 +44,7 @@ public class ListaDoble {
         }
     }
 
-    //INSERTAR AL FINAL
+    //INSERTAR AL INI
     public void Insertarini(int dato) {
         NodoDoble nodo2 = new NodoDoble();
         nodo2.setDato(dato);

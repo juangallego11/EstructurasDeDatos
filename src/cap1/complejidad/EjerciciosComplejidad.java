@@ -7,7 +7,7 @@ package estructurasdedatos.cap1.complejidad;
 
 /**
  *
- * @author tusk
+ * @author dr
  */
 public class EjerciciosComplejidad {
     

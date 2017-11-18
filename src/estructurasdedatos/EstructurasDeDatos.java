@@ -63,6 +63,7 @@ public class EstructurasDeDatos {
         mimatriz.insertar(2,0, 2);
         mimatriz.insertar(2,1, 5);
         mimatriz.insertar(2,2, 0);
+        mimatriz.eliminar(2,0, 0);
         mimatriz.listar();*/
         //Prueba Vector
         /*Vector mivector = new Vector();
