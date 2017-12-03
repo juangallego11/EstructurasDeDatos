@@ -17,6 +17,7 @@ import cap3.mapas.Diccionario;
 import cap3.mapas.TablaHash;
 import cap4.arboles.ArbolB;
 import estructurasdedatos.cap2.arreglos.Matriz;
+import estructurasdedatos.estructurahashtable.HashTable;
 import utiles.nodos.NodoArbolB;
 
 /**
@@ -127,8 +128,10 @@ public class EstructurasDeDatos {
        String[] elementos = {"20", "33", "21", "10"};
        mitabla.miFuncionHash(elementos, mitabla.arreglo);
        mitabla.listar();*/
-        //PRUEBA 
-        ArbolB nuevo = new ArbolB();
+        
+        
+        //PRUEBA Arbol
+        /*ArbolB nuevo = new ArbolB();
         nuevo.insertar(12);
         nuevo.insertar(23);
         nuevo.insertar(10);
@@ -140,5 +143,9 @@ public class EstructurasDeDatos {
         System.out.println("<------ preorden");
         nuevo.postorder();
         System.out.println("<------ postorden");
+*/
+        
+        //Prueba TablaHashDavid
+        HashTable tabla = new HashTable(5);
     }
 }
