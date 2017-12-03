@@ -17,7 +17,7 @@ import cap3.mapas.Diccionario;
 import cap3.mapas.TablaHash;
 import cap4.arboles.ArbolB;
 import estructurasdedatos.cap2.arreglos.Matriz;
-import estructurasdedatos.estructurahashtable.Tablahas;
+import cap3.mapas.Tablahas;
 import utiles.nodos.NodoArbolB;
 
 /**
