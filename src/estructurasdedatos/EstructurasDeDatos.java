@@ -17,7 +17,7 @@ import cap3.mapas.Diccionario;
 import cap3.mapas.TablaHash;
 import cap4.arboles.ArbolB;
 import estructurasdedatos.cap2.arreglos.Matriz;
-import estructurasdedatos.estructurahashtable.HashTable;
+import estructurasdedatos.estructurahashtable.Tablahas;
 import utiles.nodos.NodoArbolB;
 
 /**
@@ -146,6 +146,6 @@ public class EstructurasDeDatos {
 */
         
         //Prueba TablaHashDavid
-        HashTable tabla = new HashTable(5);
+        Tablahas tabla = new Tablahas(5);
     }
 }

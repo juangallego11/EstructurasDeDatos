@@ -9,23 +9,15 @@ package estructurasdedatos.estructurahashtable;
 
 /**
  *
- * @author Cristian C. Gallego
+ * @author Juan Galleog
  */
-public class HashTable {
+public class Tablahas {
 
      private Mapa2[] tablahash;
     private Mapa2 dato;
     private int tam;
 
-    public HashTable(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public HashTable(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public HashTable(int i) {
+    public Tablahas(int i) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

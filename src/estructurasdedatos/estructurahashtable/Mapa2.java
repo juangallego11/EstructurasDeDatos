@@ -7,7 +7,7 @@ package estructurasdedatos.estructurahashtable;
 
 /**
  *
- * @author Cristian C. Gallego
+ * @author Juan Gallego
  */
 public class Mapa2 {
     
