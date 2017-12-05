@@ -3,16 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cap3.mapas;
+package cap3.tablahash;
 
 /**
  *
- * @author Juan Gallego
+ * @author David
  */
-public class Mapa2 {
-    
-    private int llave;
-    private String valor;
+public class Mapa {
 
     /**
      * @return the llave
@@ -41,6 +38,7 @@ public class Mapa2 {
     public void setValor(String valor) {
         this.valor = valor;
     }
-    
+    private int llave;
+    private String valor;
     
 }

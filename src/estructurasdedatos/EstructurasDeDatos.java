@@ -14,10 +14,12 @@ import cap2.listas.ListaDoble;
 import cap2.listas.ListaSimple;
 import cap2.listas.Pila;
 import cap3.mapas.Diccionario;
-import cap3.mapas.TablaHash;
+import cap3.tablahash.TablaHash;
+import cap4.arboles.ArbolAVL;
 import cap4.arboles.ArbolB;
+import cap5.grafos.Grafo;
 import estructurasdedatos.cap2.arreglos.Matriz;
-import cap3.mapas.Tablahas;
+import utiles.nodos.NodoArbolAVL;
 import utiles.nodos.NodoArbolB;
 
 /**
@@ -123,6 +125,7 @@ public class EstructurasDeDatos {
        //diccio.buscarValorConClave("Escritorio");
        //diccio.buscarValorConClave("Lapiz");
        diccio.buscarValorConClave("computador");*/
+        
         //Prueba Tabla hash
         /*TablaHash mitabla = new TablaHash(8);
        String[] elementos = {"20", "33", "21", "10"};
@@ -146,6 +149,40 @@ public class EstructurasDeDatos {
 */
         
         //Prueba TablaHashDavid
-        Tablahas tabla = new Tablahas(5);
+        /*TablaHash tabla = new TablaHash();
+        tabla.crearvector(2000);
+        tabla.insertar(9000, "JuanGallego");
+        tabla.insertar(6000, "LeandroGallego");
+        tabla.insertar(5000, "DavidGallego");
+        tabla.listar();*/
+        
+        //PruebaArbolAvl
+        
+    /* ArbolAVL arbol = new ArbolAVL();
+     NodoArbolAVL arbol1 = new NodoArbolAVL(50);
+     
+     arbol.insertar(50);
+     arbol.insertar(34);
+     arbol.insertar(43);
+     arbol.insertar(23);
+     arbol.insertar(30);
+     //arbol.rotarDD(arbol1);
+    */
+     
+     //Prueba Grafos1
+     
+     Grafo migrafo = new Grafo(8);
+     migrafo.insertaArista(4, 6, 2);
+     migrafo.insertaArista(3, 5, 2);
+     migrafo.insertaArista(3, 2, 1);
+     migrafo.insertaArista(2, 7, 5);
+     //migrafo.existeArista(4, 6);
+     migrafo.mostrarGrafo();
+     
+     
+        
+        
+        
+        
     }
 }

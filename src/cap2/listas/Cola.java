@@ -5,7 +5,7 @@
  */
 package cap2.listas;
 
-import estructurasdedatos.utiles.nodos.NodoObjeto;
+import utiles.nodos.NodoObjeto;
 
 /**
  *

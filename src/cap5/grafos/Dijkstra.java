@@ -9,7 +9,7 @@ package cap5.grafos;
  *
  * @author Dr
  */
-public class Dijkstra {
+/*public class Dijkstra {
 
         private int[][] Pesos;
         private int[] ultimo;
@@ -38,8 +38,7 @@ public class Dijkstra {
 // Pasos para marcar los n-1 vértices
             for (int i = 1; i < n; i++) {
                 int v = minimo();
-                /* selecciona vértice no marcado
-de menor distancia */
+                // selecciona vértice no marcado de menor distancia
                 F[v] = true;
 // actualiza distancia de vértices no marcados
                 for (int w = 1; w < n; w++) {
@@ -64,6 +63,6 @@ de menor distancia */
             }
             return v;
         }
-    }
+    }*/
 
 

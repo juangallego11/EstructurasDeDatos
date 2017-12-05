@@ -3,27 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cap3.mapas;
-
-
+package cap3.tablahash;
 
 /**
  *
- * @author David Gallego
+ * @author David
  */
-public class HashTable1 {
-
-     private Mapa2[] tablahash;
-    private Mapa2 dato;
+public class TablaHash {
+    private Mapa[] tablahash;
+    private Mapa dato;
     private int tam;
 
     public void crearvector(int t) {
         this.tam = t;
-        this.tablahash = new Mapa2[tam];
+        this.tablahash = new Mapa[tam];
     }
 
     public int funcionhash(int valor) {
-        int vecht[] = new int[7];
+        int vecht[] = new int[10];
         int num = valor;
         int pos;
         for (int i = 0; i < 10; i++) {
@@ -48,7 +45,7 @@ public class HashTable1 {
     }
 
     public boolean insertar(int llave, String valor) {
-        Mapa2 nuevo = new Mapa2();
+        Mapa nuevo = new Mapa();
         nuevo.setLlave(llave);
         nuevo.setValor(valor);
         int posicion = this.funcionhash(llave);
@@ -84,5 +81,4 @@ public class HashTable1 {
         tablahash[pos] = null;
         System.out.println("el dato de la posicion " + pos + " ha sido eliminada");
     }
-
 }

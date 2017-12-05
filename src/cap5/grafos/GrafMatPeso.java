@@ -10,13 +10,5 @@ package cap5.grafos;
  * @author David
  */
 class GrafMatPeso {
-
-    static int INFINITO;
-
-    int[][] matPeso;
-
-    int numeroDeVertices() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
 }
