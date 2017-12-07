@@ -104,7 +104,7 @@ public class Grafo {
         }
     }
 
-// ----- Operadores para obtener lista de adyacentes -----//
+//Listas de adyacencia
     public boolean listaAdyVacia(int v) {
         if(grafo[v] == null) {
             return true;

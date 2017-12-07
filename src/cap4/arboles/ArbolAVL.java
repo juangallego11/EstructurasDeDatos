@@ -106,7 +106,8 @@ public class ArbolAVL {
     }
 
     //Rotaciones
-    //
+    
+    //IZQ-IZQ
     public NodoArbolAVL rotarII(NodoArbolAVL n) {
         NodoArbolAVL aux = n.gethIzq();
         n.sethIzq(aux.gethDer());
@@ -115,7 +116,7 @@ public class ArbolAVL {
         aux.setFe(Math.max(Fe(aux.gethIzq()), Fe(aux.gethDer())) + 1);
         return aux;
     }
-
+    //DER-DER
     public NodoArbolAVL rotarDD(NodoArbolAVL n) {
         NodoArbolAVL aux = n.gethDer();
         n.sethDer(aux.gethIzq());
@@ -124,14 +125,14 @@ public class ArbolAVL {
         aux.setFe(Math.max(Fe(aux.gethIzq()), Fe(aux.gethDer())) + 1);
         return aux;
     }
-
+    //IZQ-DER
     public NodoArbolAVL rotarID(NodoArbolAVL n) {
         NodoArbolAVL aux;
         n.sethIzq(rotarDD(n.gethDer()));
         aux = rotarII(n);
         return aux;
     }
-
+    //DER-IZQ
     public NodoArbolAVL rotarDI(NodoArbolAVL n) {
         NodoArbolAVL aux;
         n.sethDer(rotarII(n.gethDer()));

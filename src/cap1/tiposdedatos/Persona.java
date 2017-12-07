@@ -85,4 +85,8 @@ public Persona(String ced, String nom, String tel, String dire){
         this.direccion = direccion;
     }
     
+    public void mostrar(){
+        System.out.println("Nombre: "+this.nombre +" Cedula: "+ this.cedula+ "Telefono: " +this.telefono+ "Direccion: " +this.direccion);
+    }
+    
 }
