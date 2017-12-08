@@ -9,9 +9,9 @@ package cap5.grafos;
  *
  * @author Dr
  */
-/*public class Dijkstra {
+public class Dijkstra {
 
-        private int[][] Pesos;
+        /*private int[][] Pesos;
         private int[] ultimo;
         private int[] D;
         private boolean[] F;
@@ -64,5 +64,5 @@ package cap5.grafos;
             return v;
         }
     }*/
-
+}
 

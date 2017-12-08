@@ -22,6 +22,7 @@ import cap2.arreglos.Matriz;
 import java.util.Scanner;
 import utiles.nodos.NodoArbolAVL;
 import utiles.nodos.NodoArbolB;
+import grafos.*;
 
 /**
  *
@@ -33,7 +34,7 @@ public class EstructurasDeDatos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String nombre,direccion,cedula,telefono;
+        /*String nombre,direccion,cedula,telefono;
         Persona people = new Persona();
         
         System.out.println("bienvenido a el proyecto estructura de datos  ");
@@ -156,37 +157,65 @@ public class EstructurasDeDatos {
                          System.out.println("nombre: "+people.getNombre()+"\n"+"direccion: "+people.getDireccion()+"\n"+"cedula: "
                 +people.getCedula()+"\n"+"telefono: "+people.getTelefono());
                                 break;
-                 }
-        }
-                
-                
-               
-                        /*switch (nume1) {
+                 }*/
+
+ /*Grafo migrafo = new Grafo(10);
+     migrafo.insertaArista(4, 6, 2);
+     migrafo.insertaArista(3, 5, 2);
+     migrafo.insertaArista(3, 2, 1);
+     migrafo.insertaArista(2, 7, 5);
+     //migrafo.existeArista(4, 6);
+     migrafo.mostrarGrafo();*/
+        Aristas[] aris
+                = {
+                    new Aristas(0, 2, 4),
+                    new Aristas(0, 3, 4),
+                    new Aristas(0, 4, 4),
+                    new Aristas(0, 1, 3),
+                    new Aristas(1, 1, 5),
+                    new Aristas(1, 2, 7),
+                    new Aristas(1, 3, 5),
+                    new Aristas(1, 5, 8),
+                    new Aristas(2, 4, 7),
+                    new Aristas(2, 6, 4),
+                    new Aristas(2, 2, 3),
+                    new Aristas(2, 3, 2),
+                    new Aristas(1, 5, 1),
+                    new Aristas(4, 3, 6)
+                };
+        Floyd f = new Floyd(7);
+        f.iniciar();
+        f.floywarshall();
+        Grafos grafo = new Grafos(aris);
+        grafo.distanciaCortaDijkstra();
+        System.out.println(grafo.toString());
+
+    }
+}
+
+/*switch (nume1) {
                             case 1: //TiposDeDatos
                                
                                 System.out.println("que ejercicio desea probar:");
                                 System.out.println("nombre: "+people.getNombre()+"\n"+"direccion: "+people.getDireccion()+"\n"+"cedula: "
                 +people.getCedula()+"\n"+"telefono: "+people.getTelefono());
                                 //people.setNombre("David");
-                                int nume2 = a.nextInt();
-                        }
-                }/*
+                                int nume2 = a.nextInt();*/
+//Prueba Ciclos
 
-            //Prueba Ciclos
-
-            /*Ciclos ci = new Ciclos();
+/*Ciclos ci = new Ciclos();
         ci.Nro1al100();
         ci.Nr100al1();
         ci.Suma1al100();
         ci.Pares();*/
-            //Prueba Condicionales
-            /*Condicionales con = new Condicionales();
+//Prueba Condicionales
+/*Condicionales con = new Condicionales();
         con.SumaImpares();
         con.SumaPares();
         con.numerosentreintervalo();*/
-            //PRUEBA CLASE PERSONA
+//PRUEBA CLASE PERSONA
 
-            /*Persona people=new Persona();
+/*Persona people=new Persona();
         people.setNombre("David");
         people.setDireccion("Barajas");
         people.setCedula("767687");
@@ -194,8 +223,8 @@ public class EstructurasDeDatos {
         
         System.out.println("nombre: "+people.getNombre()+"\n"+"direccion: "+people.getDireccion()+"\n"+"cedula: "
                 +people.getCedula()+"\n"+"telefono: "+people.getTelefono());*/
-            //PRUEBA MARTRIZ
-            /*Matriz mimatriz = new Matriz();
+//PRUEBA MARTRIZ
+/*Matriz mimatriz = new Matriz();
         mimatriz.crear(3, 3);
         mimatriz.insertar(0, 0, 4);
         mimatriz.insertar(0,1, 3);
@@ -208,8 +237,8 @@ public class EstructurasDeDatos {
         mimatriz.insertar(2,2, 0);
         mimatriz.eliminar(2,0, 0);
         mimatriz.listar();*/
-            //Prueba Vector
-            /*Vector mivector = new Vector();
+//Prueba Vector
+/*Vector mivector = new Vector();
         mivector.crearvec(4);
         mivector.insertar(0, "juan");
         mivector.insertar(1, "david");
@@ -220,8 +249,8 @@ public class EstructurasDeDatos {
         mivector.listar();
         mivector.borrar(2);
         mivector.listar();*/
-            //Prueba ListaSimple
-            /*ListaSimple milis = new ListaSimple();
+//Prueba ListaSimple
+/*ListaSimple milis = new ListaSimple();
        milis.crearlista();
        milis.insertaraInicio(8);
        milis.insertaraInicio(2);
@@ -229,16 +258,16 @@ public class EstructurasDeDatos {
        milis.listar();
        milis.borrar(8);
        milis.listar();*/
-            //Prueba Lista_doble
-            /*ListaDoble milist = new ListaDoble();
+//Prueba Lista_doble
+/*ListaDoble milist = new ListaDoble();
         milist.Crearlist();
         milist.Insertarini(2);
         milist.Listar();
         milist.Insertarfin(23);
         milist.Insertarini(5);
         milist.Listar();*/
-            //Prueba Estructura Cola
-            /* Cola colaa = new Cola();
+//Prueba Estructura Cola
+/* Cola colaa = new Cola();
         
         colaa.crearCola();
         colaa.encolar(2);
@@ -250,28 +279,28 @@ public class EstructurasDeDatos {
         colaa.encolar(6);
         colaa.listar();
         colaa.desencolar();*/
-            //Prueba de La Estructura pila
-            /*Pila mipila = new Pila();
+//Prueba de La Estructura pila
+/*Pila mipila = new Pila();
        
        mipila.apilar("juan", "315", "6677", "jjns");
        mipila.listar();
        mipila.apilar("david", "347", "627", "876");
        mipila.listar();*/
-            //Prueba de la Estructura Mapa
-            /*Diccionario diccio = new Diccionario();
+//Prueba de la Estructura Mapa
+/*Diccionario diccio = new Diccionario();
        diccio.agregarMapa("Escritorio", "Mueble constituido por un tablero para escribir y cajones");
        diccio.agregarMapa("Lapiz", "implemento para escribir");
        diccio.agregarMapa("computador", "dispositivo para todos los ingenieros de sistemas");
        //diccio.buscarValorConClave("Escritorio");
        //diccio.buscarValorConClave("Lapiz");
        diccio.buscarValorConClave("computador");*/
-            //Prueba Tabla hash
-            /*TablaHash mitabla = new TablaHash(8);
+//Prueba Tabla hash
+/*TablaHash mitabla = new TablaHash(8);
        String[] elementos = {"20", "33", "21", "10"};
        mitabla.miFuncionHash(elementos, mitabla.arreglo);
        mitabla.listar();*/
-            //PRUEBA Arbol
-            /*ArbolB nuevo = new ArbolB();
+//PRUEBA Arbol
+/*ArbolB nuevo = new ArbolB();
         nuevo.insertar(12);
         nuevo.insertar(23);
         nuevo.insertar(10);
@@ -283,16 +312,16 @@ public class EstructurasDeDatos {
         System.out.println("<------ preorden");
         nuevo.postorder();
         System.out.println("<------ postorden");
-             */
-            //Prueba TablaHashDavid
-            /*TablaHash tabla = new TablaHash();
+ */
+//Prueba TablaHashDavid
+/*TablaHash tabla = new TablaHash();
         tabla.crearvector(2000);
         tabla.insertar(9000, "JuanGallego");
         tabla.insertar(6000, "LeandroGallego");
         tabla.insertar(5000, "DavidGallego");
         tabla.listar();*/
-            //PruebaArbolAvl
-            /* ArbolAVL arbol = new ArbolAVL();
+//PruebaArbolAvl
+/* ArbolAVL arbol = new ArbolAVL();
      NodoArbolAVL arbol1 = new NodoArbolAVL(50);
      
      arbol.insertar(50);
@@ -301,15 +330,6 @@ public class EstructurasDeDatos {
      arbol.insertar(23);
      arbol.insertar(30);
      //arbol.rotarDD(arbol1);
-             */
-            //Prueba Grafos1
-            /*Grafo migrafo = new Grafo(8);
-     migrafo.insertaArista(4, 6, 2);
-     migrafo.insertaArista(3, 5, 2);
-     migrafo.insertaArista(3, 2, 1);
-     migrafo.insertaArista(2, 7, 5);
-     //migrafo.existeArista(4, 6);
-     migrafo.mostrarGrafo();
-             */
-        }
-    }
+ */
+//Prueba Grafos1
+

@@ -123,5 +123,9 @@ public class Grafo {
             return anterior.sgte;
         }
     }
+    
+    public void dijkstra(Grafo g,int nroNodos){
+        
+    }
 
 }
