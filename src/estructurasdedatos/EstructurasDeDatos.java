@@ -5,6 +5,12 @@
  */
 package estructurasdedatos;
 
+import MetodosOrdenamiento.Conteo;
+import MetodosOrdenamiento.Insercion;
+import MetodosOrdenamiento.LectorDeDatos;
+import MetodosOrdenamiento.Mezcla;
+import MetodosOrdenamiento.Montones;
+import MetodosOrdenamiento.Rapido;
 import cap1.complejidad.Ciclos;
 import cap1.complejidad.Condicionales;
 import cap1.tiposdedatos.Persona;
@@ -24,6 +30,9 @@ import java.util.Scanner;
 import utiles.nodos.NodoArbolAVL;
 import utiles.nodos.NodoArbolB;
 import grafos.*;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -361,6 +370,35 @@ public class EstructurasDeDatos {
      arbol.insertar(30);
      //arbol.rotarDD(arbol1);
          */
-   
+  
+
+Long n = 2000000L;
+		List<Integer> datos = new ArrayList<Integer>();
+		
+		System.out.println(Thread.currentThread().getName() + " - Main");
+		System.out.println("Ejecutando el aplicativo para n="+n);
+		try {
+			//Inicializamos el test con la cantidad de datos especificada
+			LectorDeDatos ld = new LectorDeDatos(n);
+			ld.generarDatos();
+			datos = ld.leerDatos();
+			
+			//Creamos los métodos de ordenamiento
+			Insercion ordenamientoInsercion = new Insercion(ld.leerDatos());
+			Mezcla mezcla = new Mezcla(ld.leerDatos());
+			Rapido rapido = new Rapido(ld.leerDatos());
+			Montones montones = new Montones(ld.leerDatos());
+			Conteo conteo = new Conteo(ld.leerDatos());
+			
+			//Lanzamos los hilos
+			ordenamientoInsercion.start();
+			mezcla.start();
+			rapido.start();
+			montones.start();
+			conteo.start();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
     }
 }
