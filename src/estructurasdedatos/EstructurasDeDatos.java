@@ -166,7 +166,9 @@ public class EstructurasDeDatos {
      migrafo.insertaArista(2, 7, 5);
      //migrafo.existeArista(4, 6);
      migrafo.mostrarGrafo();*/
-        Aristas[] aris
+ 
+ //PRUEBA GRAFOS DOS
+        /*Aristas[] aris
                 = {
                     new Aristas(0, 2, 4),
                     new Aristas(0, 3, 4),
@@ -189,7 +191,7 @@ public class EstructurasDeDatos {
         Grafos grafo = new Grafos(aris);
         grafo.distanciaCortaDijkstra();
         System.out.println(grafo.toString());
-
+*/
     }
 }
 
@@ -331,5 +333,4 @@ public class EstructurasDeDatos {
      arbol.insertar(30);
      //arbol.rotarDD(arbol1);
  */
-//Prueba Grafos1
 
