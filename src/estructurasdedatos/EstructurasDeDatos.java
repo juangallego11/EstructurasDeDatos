@@ -10,6 +10,7 @@ import cap1.complejidad.Condicionales;
 import cap1.tiposdedatos.Persona;
 import cap2.arreglos.Vector;
 import cap2.listas.Cola;
+import cap2.listas.ColaPrioritaria;
 import cap2.listas.ListaDoble;
 import cap2.listas.ListaSimple;
 import cap2.listas.Pila;
@@ -23,6 +24,7 @@ import java.util.Scanner;
 import utiles.nodos.NodoArbolAVL;
 import utiles.nodos.NodoArbolB;
 import grafos.*;
+import java.util.Random;
 
 /**
  *
@@ -166,8 +168,7 @@ public class EstructurasDeDatos {
      migrafo.insertaArista(2, 7, 5);
      //migrafo.existeArista(4, 6);
      migrafo.mostrarGrafo();*/
- 
- //PRUEBA GRAFOS DOS
+        //PRUEBA GRAFOS DOS
         /*Aristas[] aris
                 = {
                     new Aristas(0, 2, 4),
@@ -191,11 +192,8 @@ public class EstructurasDeDatos {
         Grafos grafo = new Grafos(aris);
         grafo.distanciaCortaDijkstra();
         System.out.println(grafo.toString());
-*/
-    }
-}
-
-/*switch (nume1) {
+         */
+ /*switch (nume1) {
                             case 1: //TiposDeDatos
                                
                                 System.out.println("que ejercicio desea probar:");
@@ -205,7 +203,7 @@ public class EstructurasDeDatos {
                                 int nume2 = a.nextInt();*/
 //Prueba Ciclos
 
-/*Ciclos ci = new Ciclos();
+        /*Ciclos ci = new Ciclos();
         ci.Nro1al100();
         ci.Nr100al1();
         ci.Suma1al100();
@@ -217,7 +215,7 @@ public class EstructurasDeDatos {
         con.numerosentreintervalo();*/
 //PRUEBA CLASE PERSONA
 
-/*Persona people=new Persona();
+        /*Persona people=new Persona();
         people.setNombre("David");
         people.setDireccion("Barajas");
         people.setCedula("767687");
@@ -225,6 +223,7 @@ public class EstructurasDeDatos {
         
         System.out.println("nombre: "+people.getNombre()+"\n"+"direccion: "+people.getDireccion()+"\n"+"cedula: "
                 +people.getCedula()+"\n"+"telefono: "+people.getTelefono());*/
+        
 //PRUEBA MARTRIZ
 /*Matriz mimatriz = new Matriz();
         mimatriz.crear(3, 3);
@@ -269,7 +268,7 @@ public class EstructurasDeDatos {
         milist.Insertarini(5);
         milist.Listar();*/
 //Prueba Estructura Cola
-/* Cola colaa = new Cola();
+/*Cola colaa = new Cola();
         
         colaa.crearCola();
         colaa.encolar(2);
@@ -281,13 +280,38 @@ public class EstructurasDeDatos {
         colaa.encolar(6);
         colaa.listar();
         colaa.desencolar();*/
+//Prueba estructuras Colaprioritaria
+
+        /*ColaPrioritaria cp = new ColaPrioritaria();
+        cp.crearcolas();
+        for (int i = 0; i <= 500; i++) {
+            //Generador de cedulas
+            Random generador = new Random();
+            int gene = 0;
+            for (int contador = 1; contador <= 1; contador++) {
+                gene = generador.nextInt(10000000);
+            }
+            //generador de prioridad (0 = no prioridad y 1= prioridad)
+            Random prioridad = new Random();
+            int priori = 0;
+            for (int contador = 0; contador <= 1; contador++) {
+                priori = prioridad.nextInt(2);
+            }
+            cp.hacercola(gene, priori);
+        }
+        cp.listar();
+        cp.atender();*/
+
+  
+
 //Prueba de La Estructura pila
 /*Pila mipila = new Pila();
        
        mipila.apilar("juan", "315", "6677", "jjns");
        mipila.listar();
        mipila.apilar("david", "347", "627", "876");
-       mipila.listar();*/
+       mipila.listar();/
+   
 //Prueba de la Estructura Mapa
 /*Diccionario diccio = new Diccionario();
        diccio.agregarMapa("Escritorio", "Mueble constituido por un tablero para escribir y cajones");
@@ -296,11 +320,13 @@ public class EstructurasDeDatos {
        //diccio.buscarValorConClave("Escritorio");
        //diccio.buscarValorConClave("Lapiz");
        diccio.buscarValorConClave("computador");*/
+
 //Prueba Tabla hash
 /*TablaHash mitabla = new TablaHash(8);
        String[] elementos = {"20", "33", "21", "10"};
        mitabla.miFuncionHash(elementos, mitabla.arreglo);
        mitabla.listar();*/
+
 //PRUEBA Arbol
 /*ArbolB nuevo = new ArbolB();
         nuevo.insertar(12);
@@ -314,7 +340,8 @@ public class EstructurasDeDatos {
         System.out.println("<------ preorden");
         nuevo.postorder();
         System.out.println("<------ postorden");
- */
+         */
+
 //Prueba TablaHashDavid
 /*TablaHash tabla = new TablaHash();
         tabla.crearvector(2000);
@@ -322,6 +349,7 @@ public class EstructurasDeDatos {
         tabla.insertar(6000, "LeandroGallego");
         tabla.insertar(5000, "DavidGallego");
         tabla.listar();*/
+
 //PruebaArbolAvl
 /* ArbolAVL arbol = new ArbolAVL();
      NodoArbolAVL arbol1 = new NodoArbolAVL(50);
@@ -332,5 +360,7 @@ public class EstructurasDeDatos {
      arbol.insertar(23);
      arbol.insertar(30);
      //arbol.rotarDD(arbol1);
- */
-
+         */
+   
+    }
+}

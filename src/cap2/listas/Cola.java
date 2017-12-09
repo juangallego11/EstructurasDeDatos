@@ -11,7 +11,7 @@ import utiles.nodos.NodoObjeto;
  *
  * @author tusk
  */
-public class Cola {
+public class Cola{
 
     //atributos_principales
     private NodoObjeto primero;

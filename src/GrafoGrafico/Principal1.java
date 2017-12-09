@@ -11,5 +11,6 @@ import java.io.Serializable;
 public class Principal1 implements Serializable{
     public static void main(String[] args) {
         new VentanaPrincipal().setVisible(true);
- }
+
+}
 }
